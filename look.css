@@ -1,4 +1,4 @@
-element {
+body {
 
     display: flex;
     justify-content: center;
@@ -6,15 +6,31 @@ element {
     height: 100vh;
     margin: 0;
     background: aquamarine;
+    font-family: 'Comfortaa', cursive;
+    font-size: larger;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape/toronto')
 
 }
 .card {
 
-    background: #eaeaea;
+    background: #000000d0;
+    color:beige;
     padding: 1em;
     border-radius: 30px;
     width: 100%;
     max-width: 420px;
     margin: 1em;
 
+}
+
+.search {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }

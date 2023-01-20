@@ -1,5 +1,23 @@
+const idPos = () => {
+    const status = document.querySelector('.status');
+
+    const success = (position) => {
+        console.log(position)
+    }
+
+    const error = () => {
+        status.textContent = 'Error';
+    }
+
+    navigator.geolocation.getCurrentPosition(success, error);
+
+}
+
+document.querySelector('.geolocate').addEventListener('click', idPos);
+
 let weather = {
     apiKey: "3e37c7f566280252cb311273fe092d15",
+
 
     fetchWeather: function (city) {
         fetch(
